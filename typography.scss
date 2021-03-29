@@ -3,70 +3,71 @@
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 32px;
-line-height: 140%;
+font-size: 3.2rem;
+line-height: 1.4rem;
 }
 @mixin font-s2 {
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 26px;
-line-height: 39px;
+font-size: 2.6rem;
+line-height: 3.9rem;
 }
 @mixin font-s3 {
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 22px;
-line-height: 33px;
+font-size: 2.2rem;
+line-height: 3.3rem;
 }
 @mixin font-s4 {
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
-font-size: 18px;
-line-height: 27px;
+font-size: 1.8rem;
+line-height: 2.7rem;
 }
 @mixin font-s5 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
     }
 @mixin font-s6 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     }
 
 @mixin font-button{
 font-family: Poppins;
 font-style: normal;
 font-weight: bold;
-font-size: 15px;
-line-height: 22px;
+font-size: 1.5rem;
+line-height: 2.2rem;
 }
 @mixin font-lead{
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
-font-size: 17px;
-line-height: 23px;
+font-size: 1.7rem;
+line-height: 2.3rem;
 }
 @mixin font-body{
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
-font-size: 14px;
-line-height: 19px;
+font-size: 1.4rem;
+line-height: 1.9rem;
 }
 @mixin font-caption{
 font-family: Open Sans;
 font-style: normal;
 font-weight: normal;
-font-size: 12px;
-line-height: 16px;
+font-size: 1.2rem;
+line-height: 1.6rem;
 }
+
