@@ -1,11 +1,5 @@
 import './icon.scss'
 
-require
-  .context('../../assets/icons', true, /\.svg$/)
-  .keys()
-  .map((icon) => icon.replace(/\.\//, ''))
-  .forEach((name) => require(`../../assets/icons/${name}`))
-
 export class Icon extends HTMLElement {
   constructor() {
     super()
