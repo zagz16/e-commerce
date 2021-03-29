@@ -4,11 +4,11 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   target: 'web',
-  entry: ['./src/js/scripts.js', './src/styles/styles.scss'],
+  entry: ['./src/js/main.js', './src/styles/styles.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'build.[fullhash].js',
+    filename: 'build.[fullhash].js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'), // boolean | string | array, static file location
@@ -17,7 +17,7 @@ module.exports = {
     hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
     https: false, // true for self-signed, object for cert authority
     noInfo: false, // only errors & warns on hot reload
-    open: true,
+    open: true
   },
   module: {
     rules: [
@@ -29,15 +29,15 @@ module.exports = {
         options: {
           emitError: true,
           emitWarning: true,
-          failOnError: true,
-        },
+          failOnError: true
+        }
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        },
+          loader: 'babel-loader'
+        }
       },
       {
         test: /\.scss$/i,
@@ -47,14 +47,14 @@ module.exports = {
           // Translates CSS into CommonJS
           'css-loader',
           // Compiles Sass to CSS
-          'sass-loader',
-        ],
-      },
-    ],
+          'sass-loader'
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/index.html'),
-    }),
-  ],
+      template: path.resolve(__dirname, 'src/index.html')
+    })
+  ]
 }
