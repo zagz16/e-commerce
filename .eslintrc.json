@@ -2,6 +2,8 @@
   "extends": "standard",
   "rules": {
     "no-undef": 0,
-    "comma-dangle": 1
+    "no-unused-vars": "warn",
+    "comma-dangle": 1,
+    "space-before-function-paren": "off"
   }
 }
