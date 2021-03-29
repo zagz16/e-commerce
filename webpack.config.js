@@ -49,6 +49,14 @@ module.exports = {
           // Compiles Sass to CSS
           'sass-loader'
         ]
+      },
+      {
+        test: /\.svg$/i,
+        use: [
+          { loader: 'svg-sprite-loader' },
+          'svg-transform-loader',
+          'svgo-loader'
+        ]
       }
     ]
   },
