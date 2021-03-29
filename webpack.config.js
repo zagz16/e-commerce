@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'build.[hash:7].js',
+    filename: 'build.[fullhash].js',
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'), // boolean | string | array, static file location
@@ -52,5 +52,9 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src/index.html'),
+    }),
+  ],
 }
