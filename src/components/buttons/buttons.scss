@@ -1,151 +1,57 @@
 @import '../../styles/colors.scss';
 @import '../../styles/typography.scss';
-//делаю отступы между рядами кнопок
-.block-buttons,
-.block-buttons1,
-.block-buttons2,
-.block-buttons3,
-.block-buttons4,
-.block-buttons5,
-.block-buttons6,
-.block-buttons7,
-.block-buttons8 {
-  margin-bottom: 0.5rem;
-}
 
-.block-buttons {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default {
-    padding: 1.5rem 4.8rem;
-    background-image: none;
-    border: 0.2rem solid $color-green-3;
-    color: $color-black-1;
-  }
-}
-.block-buttons1 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default_small {
-    padding: 1.2rem 1.6rem;
-    background-image: none;
-    border: 0.2rem solid $color-green-3;
-    color: $color-black-1;
-  }
-}
-.block-buttons2 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default_smallest {
-    padding: 0.6rem 1.2rem;
-    background-image: none;
-    border: 0.2rem solid $color-green-3;
-    color: $color-black-1;
-  }
-}
-.block-buttons3 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default {
-    padding: 1.5rem 4.8rem;
-    background-color: $color-green-1;
-    border: 0.2rem solid $color-green-2;
-    color: #fff;
-  }
-}
-.block-buttons4 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default_small {
-    padding: 1.2rem 1.6rem;
-    background-color: $color-green-1;
-    border: 0.2rem solid $color-green-2;
-    color: #fff;
-  }
-}
-.block-buttons5 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default_smallest {
-    padding: 0.6rem 1.2rem;
-    background-color: $color-green-1;
-    border: 0.2rem solid $color-green-2;
-    color: #fff;
-  }
-}
+.btn {
+  @include font-button;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
 
-.block-buttons6 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
+  border-radius: 1.2rem;
+  padding: 1.5rem 4.8rem;
+  border: 0.2rem solid transparent;
+  outline: none;
+  transition: opacity 220ms ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
   }
-  .btn-default {
-    padding: 1.5rem 4.8rem;
-    background-color: $color-black-6;
-    border: 0.2rem solid $color-black-6;
+
+  &--default {
+    background: $color-white;
+    border-color: $color-green-3;
     color: $color-black-1;
+
+    svg-icon {
+      color: $color-green-3;
+    }
   }
-}
-.block-buttons7 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default_small {
+
+  &--small {
     padding: 1.2rem 1.6rem;
-    background-color: $color-black-6;
-    border: 0.2rem solid $color-black-6;
-    color: $color-black-1;
   }
-}
-.block-buttons8 {
-  .btn {
-    @include font-button;
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 1.2rem;
-  }
-  .btn-default_smallest {
+
+  &--smallest {
     padding: 0.6rem 1.2rem;
-    background-color: $color-black-6;
-    border: 0.2rem solid $color-black-6;
+  }
+
+  &--green {
+    background: $color-green-1;
+    border-color: $color-green-2;
+    color: $color-white;
+  }
+
+  &--gray {
+    background: $color-black-6;
+    border-color: $color-black-6;
     color: $color-black-1;
+  }
+  &--transparent {
+    background: none;
+    color: $color-black-1;
+    svg-icon {
+      color: $color-green-3;
+    }
   }
 }
