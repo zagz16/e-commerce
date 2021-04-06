@@ -1,0 +1,38 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.check {
+  @include font-body;
+  display: block;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  .check__input {
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+  }
+  .check_text {
+    color: $color-black-1;
+  }
+  .check__icon {
+    border: 1.5px solid $color-black-4;
+    color: $color-white;
+    border-radius: 2px;
+    svg-icon {
+      opacity: 0;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.check .check__input:checked ~ .check__icon {
+  background-color: $color-green-1;
+  border: 1.5px solid $color-green-2;
+  svg-icon {
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+  }
+}

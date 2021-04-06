@@ -104,69 +104,47 @@
       button<svg-icon name="ic-chevron-right"></svg-icon>
     </button>
  -->
-    <form action="">
-      <div class="block-input">
-        <legend>Text Label</legend>
+
+    <!-- 
+      <label class='check'>
+        <input type="checkbox" class="check__input"  name="форма ввода" value="">
+        <span class='check__icon'> <svg-icon name ='ic-actions-check-simple'></svg-icon></span>
+       <span class='check__text'>Работай сука</span> 
+     
+      </label>
+       -->
+
+    <label class="form">
+      <input
+        type="text"
+        class="form__input"
+        value=""
+        placeholder="Text field"
+      />
+    </label>
+
+    <label class="form"
+      ><span class="form__text"
+        >Text field
         <input
           type="text"
-          class="input"
-          name="форма ввода"
+          class="form__input"
+          value=""
+          placeholder="Text field"
+      /></span>
+    </label>
+
+    <label class="form">
+      <span class="form__text">Text field</span>
+      <div class="form__wrap">
+        <svg-icon name="ic-contact-mail"></svg-icon>
+        <input
+          type="text"
+          class="form__input form--pos"
           value=""
           placeholder="Text field"
         />
       </div>
-      <br />
-
-      <div class="block-select">
-        <legend>Text Label</legend>
-        <select class="select">
-          <option value="1">яблочко</option>
-          <option value="2">клубничка</option>
-        </select>
-      </div>
-      <br />
-
-      <div class="block-mailLeft">
-        <legend>Text Label</legend>
-        <svg-icon name="ic-contact-mail" class="icon-left"></svg-icon>
-        <input
-          type="email"
-          class="input__withMail"
-          name="форма ввода"
-          value=""
-          placeholder="Text field"
-        />
-      </div>
-      <br />
-
-      <div class="block-checkboxSelect">
-        <legend>Text Label</legend>
-        <input
-          type="checkbox"
-          class="checkbox"
-          id="happy"
-          name="форма ввода"
-          value=""
-        />
-        <label for="happy"></label>
-        <select class="select__withCheckbox">
-          <option value="1">яблочко</option>
-          <option value="2">клубничка</option>
-        </select>
-      </div>
-      <br />
-
-      <div class="block-mailRight">
-        <legend>Text Label</legend>
-        <input
-          type="email"
-          class="input__withMail"
-          name="форма ввода"
-          value=""
-          placeholder="Text field"
-        />
-        <svg-icon name="ic-contact-mail" class="icon-right"></svg-icon>
-      </div>
-    </form>
+    </label>
   </body>
 </html>
