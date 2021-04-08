@@ -1,38 +1,40 @@
 @import '../../styles/colors.scss';
 @import '../../styles/typography.scss';
 
-.check {
+.checkbox {
   @include font-body;
   display: block;
   position: relative;
   padding: 5px;
   cursor: pointer;
-  .check__input {
+
+  &__input {
     position: absolute;
     z-index: -1;
     visibility: hidden;
   }
-  .check_text {
+
+  &__label {
     color: $color-black-1;
   }
-  .check__icon {
+
+  &__icon {
     border: 1.5px solid $color-black-4;
     color: $color-white;
     border-radius: 2px;
+    transition: border-color 250ms ease;
     svg-icon {
       opacity: 0;
-      width: 18px;
-      height: 18px;
+
+      transition: opacity 250ms ease;
     }
   }
-}
 
-.check .check__input:checked ~ .check__icon {
-  background-color: $color-green-1;
-  border: 1.5px solid $color-green-2;
-  svg-icon {
-    opacity: 1;
-    width: 18px;
-    height: 18px;
+  &__input:checked ~ &__icon {
+    background-color: $color-green-1;
+    border: 1.5px solid $color-green-2;
+    svg-icon {
+      opacity: 1;
+    }
   }
 }
