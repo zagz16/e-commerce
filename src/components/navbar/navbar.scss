@@ -3,8 +3,8 @@
 
 .menu {
   @include font-s5;
-
-  &__option {
+  background: $color-black-7;
+  &__items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,7 @@
       a {
         text-decoration: none;
         padding: 0 5px;
+        color: $color-black-1;
       }
     }
   }
@@ -24,16 +25,10 @@
   &__icon {
     color: $color-green-1;
   }
-  &--black &__option {
+  &--black {
     background: $color-black-1;
-    a {
+    li a {
       color: $color-white;
-    }
-  }
-  &--white &__option {
-    background: $color-black-7;
-    a {
-      color: $color-black-1;
     }
   }
 }
