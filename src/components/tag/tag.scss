@@ -1,0 +1,41 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.tag {
+  @include font-s6;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+  &__colorGreen {
+    background: $color-green-5;
+  }
+
+  &__colorBlack {
+    background: $color-black-6;
+  }
+  &__colorBorder {
+    background: $color-white;
+    border: 1.5px solid $color-black-5;
+  }
+
+  &__text--colorBlack {
+    color: $color-black-1;
+  }
+  &__text--colorGreen {
+    color: $color-green-1;
+  }
+
+  &--padding {
+    padding: 0 8px;
+  }
+
+  &__icon--Green {
+    color: $color-green-4;
+  }
+  &__icon--Black {
+    color: $color-black-4;
+  }
+}
