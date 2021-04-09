@@ -1,0 +1,39 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.menu {
+  @include font-s5;
+
+  &__option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    padding: 16px 0;
+    li {
+      padding: 0 20px;
+      a {
+        text-decoration: none;
+        padding: 0 5px;
+      }
+    }
+  }
+
+  &__icon {
+    color: $color-green-1;
+  }
+  &--black &__option {
+    background: $color-black-1;
+    a {
+      color: $color-white;
+    }
+  }
+  &--white &__option {
+    background: $color-black-7;
+    a {
+      color: $color-black-1;
+    }
+  }
+}
