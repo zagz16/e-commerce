@@ -1,0 +1,23 @@
+.avatar {
+  background-color: yellow;
+  border-radius: 50%;
+  border: none;
+
+  &--small {
+    width: 32px;
+    height: 32px;
+  }
+  &--middle {
+    width: 40px;
+    height: 40px;
+  }
+  &--big {
+    width: 64px;
+    height: 64px;
+  }
+  &__photo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
