@@ -4,7 +4,7 @@
 .quote {
   @include font-s5;
   display: inline-block;
-  position: relative;
+  /*  position: relative; */
   background-color: $color-white;
   color: $color-black-1;
   border-radius: 12px;
@@ -17,12 +17,14 @@
     display: block;
     color: $color-black-4;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
-  .avatar {
-    //смущает реализация аватара в цитате
-    position: absolute;
-    left: 160px;
-    top: 160px;
-  }
+}
+.avatar {
+  //смущает реализация аватара в цитате
+  /*  position: absolute;
+  left: 160px;
+  top: 160px; */
+  margin-top: -22px;
+  margin-left: 160px;
 }
