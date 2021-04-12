@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+@import '../avatar/avatar.scss';
+.quote {
+  @include font-s5;
+  display: inline-block;
+  position: relative;
+  background-color: $color-white;
+  color: $color-black-1;
+  border-radius: 12px;
+  border: 1px solid $color-black-4;
+  &__title {
+    padding: 24px 32px;
+  }
+  &__subtitle {
+    @include font-s6;
+    display: block;
+    color: $color-black-4;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .avatar {
+    //смущает реализация аватара в цитате
+    position: absolute;
+    left: 50%;
+    top: 160px;
+  }
+}
