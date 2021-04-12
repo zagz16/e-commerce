@@ -4,38 +4,28 @@
 .tag {
   @include font-s6;
   border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
+  border: 1px solid transparent;
+  color: $color-black-1;
+  background: $color-white;
+  padding: 0 8px;
+  display: inline-block;
 
-  &__colorGreen {
+  &__icon {
+    color: $color-black-4;
+    margin-top: -3px;
+  }
+  &--green {
     background: $color-green-5;
+    color: $color-green-1;
+    svg-icon {
+      color: $color-green-4;
+    }
   }
 
-  &__colorBlack {
+  &--black {
     background: $color-black-6;
   }
-  &__colorBorder {
-    background: $color-white;
-    border: 1.5px solid $color-black-5;
-  }
-
-  &__text--colorBlack {
-    color: $color-black-1;
-  }
-  &__text--colorGreen {
-    color: $color-green-1;
-  }
-
-  &--padding {
-    padding: 0 8px;
-  }
-
-  &__icon--Green {
-    color: $color-green-4;
-  }
-  &__icon--Black {
-    color: $color-black-4;
+  &--border {
+    border-color: $color-black-5;
   }
 }
