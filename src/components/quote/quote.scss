@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.quote {
+  @include font-s5;
+  max-width: 369px;
+  position: relative;
+  background-color: $color-white;
+  color: $color-black-1;
+  border-radius: 12px;
+  border: 1px solid $color-black-4;
+  &__title {
+    padding: 24px 32px;
+  }
+  &__subtitle {
+    @include font-s6;
+    display: block;
+    color: $color-black-4;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  &__avatar {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-40%) translateY(50%);
+  }
+}
