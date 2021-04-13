@@ -3,7 +3,7 @@
 
 .quote {
   @include font-s5;
-  display: inline-block;
+  max-width: 369px;
   position: relative;
   background-color: $color-white;
   color: $color-black-1;
