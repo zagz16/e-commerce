@@ -1,10 +1,10 @@
 @import '../../styles/colors.scss';
 @import '../../styles/typography.scss';
-@import '../avatar/avatar.scss';
+
 .quote {
   @include font-s5;
   display: inline-block;
-  /*  position: relative; */
+  position: relative;
   background-color: $color-white;
   color: $color-black-1;
   border-radius: 12px;
@@ -19,12 +19,10 @@
     text-align: center;
     padding-bottom: 40px;
   }
-}
-.avatar {
-  //смущает реализация аватара в цитате
-  /*  position: absolute;
-  left: 160px;
-  top: 160px; */
-  margin-top: -22px;
-  margin-left: 160px;
+  &__avatar {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-40%) translateY(50%);
+  }
 }
