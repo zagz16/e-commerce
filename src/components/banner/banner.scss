@@ -1,0 +1,25 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+@import '../buttons/buttons.scss';
+
+.banner {
+  @include font-s6;
+  color: $color-green-1;
+  max-width: 390px;
+  background-image: url(/src/assets/img/Image-light.jpg);
+  background-size: cover;
+  padding: 30px 0 30px 33px;
+  border-radius: 12px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px 90px 0;
+  }
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__subtitle {
+    @include font-s3;
+    color: $color-black-1;
+  }
+}
