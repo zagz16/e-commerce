@@ -1,0 +1,66 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.big-banner-food {
+  @include font-s6;
+  color: $color-white;
+  box-sizing: border-box;
+  max-width: 1170px;
+  width: 100%;
+  height: 480px;
+  border-radius: 12px;
+  position: relative;
+  background: url('/src/assets/img/Rectangle\ 26.jpg');
+  background-size: cover;
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &__categories {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    padding: 364px 813px 32px 200px;
+    span {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__categories--column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 32px;
+    span:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__categories--column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    span:nth-child(2) {
+      text-decoration: underline;
+    }
+    span:nth-child(3) {
+      text-decoration: underline;
+      margin-bottom: 0;
+    }
+  }
+  &__quote {
+    @include font-s1;
+    z-index: 4;
+    position: absolute;
+    bottom: 24px;
+    right: 200px;
+  }
+}
